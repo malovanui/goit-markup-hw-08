@@ -1,0 +1,40 @@
+// Утиліти, змінні та повторювані компоненти
+@import "./utils/_variables";
+@import "./utils/_utils";
+@import "./components/_container";
+@import "./components/_section";
+@import "./components/_logo";
+@import "./components/_btn";
+@import "./components/_title";
+@import "./utils/_visually-hidden";
+
+// _______MAIN PAGE________
+// ------- Header -------
+@import "./components/_header";
+// ------- Hero -------
+@import "./components/_hero";
+// ------- Modal window -------
+@import "./components/_back-drop";
+@import "./components/_pop-up";
+@import "./components/_modal-form";
+// ------- Features -------
+@import "./components/_features";
+// ------- Work -------
+@import "./components/_work";
+// ------- Team -------
+@import "./components/_team";
+@import "./components/_team-member";
+@import "./components/_social-links";
+// ------- Clients -------
+@import "./components/_clients";
+@import "./components/_client-logo";
+
+
+
+// _______PORTFOLIO________
+@import "./components/_portfolio-gallery";
+@import "./components/_portfolio-card";
+
+
+// ------- Footer -------
+@import "./components/_footer";
