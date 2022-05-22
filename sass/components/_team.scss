@@ -1,38 +1,37 @@
 .team {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: $secondaryBackgroundColor;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $secondaryBackgroundColor;
 
-    &__title {  
-        font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 28px;
-            line-height: 1.17;
-            text-align: center;
-            letter-spacing: 0.03em;
+  &__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
 
-            margin-bottom: 30px;
+    margin-bottom: 30px;
 
-            color: $mainTextColor;
+    color: $mainTextColor;
 
-        @media screen and (min-width: 1200px) {
-            margin-bottom: 50px;
-        }
-        }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+    }
+  }
 }
-
 
 .team-list {
-    @media screen and (min-width: 768px) {
-        display: flex;
-            /* на випадок додавання членів команди
-          flex-wrap: wrap; */
-    }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
-@media screen and (min-width: 1200px) {
-.team-member:not(:nth-child(4n)) {
-    margin-right: 30px;
-}
-}
+// @media screen and (min-width: 1200px) {
+// .team-member:not(:nth-child(4n)) {
+//     margin-right: 30px;
+// }
+// }

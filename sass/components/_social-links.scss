@@ -1,29 +1,29 @@
 .social-links {
+  display: flex;
+  justify-content: center;
+
+  &__link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    background-color: #fff;
+    fill: #afb1b8;
     display: flex;
     justify-content: center;
+    align-items: center;
 
-    &__link {
-        width: 44px;
-        height: 44px;
-        border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-        background-color: #fff;
-        fill: #AFB1B8;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
 
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-            fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    &__item:not(:last-child) {
-        margin-right: 10px;
-    }
-
-    &__link:hover,
-    &__link:focus {
-        background-color: $accentColor;
-        fill: #FFFFFF;
-    }
+  &__link:hover,
+  &__link:focus {
+    background-color: $accentColor;
+    fill: #ffffff;
+  }
 }
