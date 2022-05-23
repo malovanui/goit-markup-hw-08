@@ -1,6 +1,11 @@
 .gallery {
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .gallery-filter {
@@ -25,9 +30,9 @@
   &__btn {
     padding: 6px 22px;
 
-    background-color: $secondaryBtnColor;
+    background-color: $secondaryBackgroundColor;
     border-radius: 4px;
-    border-color: $secondaryBtnColor;
+    border-color: $secondaryBackgroundColor;
     box-shadow: none;
     border: none;
 
