@@ -186,6 +186,7 @@ img {
     border: none;
     background-color: transparent;
     margin-left: auto;
+    z-index: 3;
   }
   .site-nav__icon-close {
     display: none;
@@ -213,15 +214,16 @@ img {
 
 @media screen and (max-width: 767px) {
   .mobile-nav {
-    position: absolute;
+    position: fixed;
     z-index: 2;
-    top: 100%;
+    top: 0;
     left: 0;
     right: 0;
     width: 100vw;
-    height: calc(100vh - 60px);
+    height: 100vh;
     padding-left: 40px;
     padding-bottom: 48px;
+    padding-top: 48px;
     background-color: #ffffff;
     display: none;
   }
@@ -1173,6 +1175,7 @@ img {
 @media screen and (min-width: 1200px) {
   .team__title {
     margin-bottom: 50px;
+    font-size: 36px;
   }
 }
 
@@ -1311,6 +1314,7 @@ img {
 @media screen and (min-width: 1200px) {
   .clients__title {
     margin-bottom: 50px;
+    font-size: 36px;
   }
 }
 
@@ -1427,6 +1431,18 @@ img {
   }
   .gallery-filter__item:not(:nth-last-child(-n + 2)) {
     margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-filter {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery-filter {
+    margin-bottom: 50px;
   }
 }
 

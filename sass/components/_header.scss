@@ -36,6 +36,7 @@
       border: none;
       background-color: transparent;
       margin-left: auto;
+      z-index: 3;
     }
 
     &__icon-close {
@@ -70,17 +71,18 @@
 
 .mobile-nav {
   @media screen and (max-width: 767px) {
-    position: absolute;
+    position: fixed;
     z-index: 2;
 
-    top: 100%;
+    top: 0;
     left: 0;
     right: 0;
     width: 100vw;
-    height: calc(100vh - 60px);
+    height: 100vh;
 
     padding-left: 40px;
     padding-bottom: 48px;
+    padding-top: 48px;
     background-color: #ffffff;
     display: none;
 
